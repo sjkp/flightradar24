@@ -7,6 +7,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Microsoft.Bot.Connector;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 
 namespace sjkp.flightradar24.bot
 {
@@ -27,6 +28,29 @@ namespace sjkp.flightradar24.bot
 
                 // return our reply to the user
                 Activity reply = activity.CreateReply($"You sent {activity.Text} which was {length} characters");
+                reply.Attachments = new List<Attachment>();
+
+                List<CardImage> cardImages = new List<CardImage>();
+                cardImages.Add(new CardImage(url: "https://upload.wikimedia.org/wikipedia/en/a/a6/Bender_Rodriguez.png"));
+                List<CardAction> cardButtons = new List<CardAction>();
+                CardAction plButton = new CardAction()
+                {
+                    Value = "https://en.wikipedia.org/wiki/Pig_Latin",
+                    Type = "openUrl",
+                    Title = "WikiPedia Page"
+                };
+                cardButtons.Add(plButton);
+                HeroCard plCard = new HeroCard()
+                {
+                    Title = "I'm a hero card",
+                    Subtitle = "Pig Latin Wikipedia Page",
+                    Images = cardImages,
+                    Buttons = cardButtons
+                };
+                Attachment plAttachment = plCard.ToAttachment();
+                reply.Attachments.Add(plAttachment);
+
+
                 await connector.Conversations.ReplyToActivityAsync(reply);
             }
             else

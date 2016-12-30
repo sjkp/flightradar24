@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sjkp.flightradar24.bot", "sjkp.flightradar24.bot\sjkp.flightradar24.bot.csproj", "{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sjkp.flightradar24.api", "sjkp.flightradar24.api\sjkp.flightradar24.api.csproj", "{B079722E-DD14-4437-983A-EDCAFB793373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sjkp.flightradar24.test", "sjkp.flightradar24.test\sjkp.flightradar24.test.csproj", "{3012F759-BF34-443A-8586-8D06CC9E1AE4}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "DockerVM", "DockerVM\DockerVM.deployproj", "{DE9128B7-4B4A-4781-93F3-C75EF0ED093B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8BA1066-5695-4D71-ABB4-65E5A5E0C3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B079722E-DD14-4437-983A-EDCAFB793373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B079722E-DD14-4437-983A-EDCAFB793373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B079722E-DD14-4437-983A-EDCAFB793373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B079722E-DD14-4437-983A-EDCAFB793373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3012F759-BF34-443A-8586-8D06CC9E1AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3012F759-BF34-443A-8586-8D06CC9E1AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3012F759-BF34-443A-8586-8D06CC9E1AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3012F759-BF34-443A-8586-8D06CC9E1AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9128B7-4B4A-4781-93F3-C75EF0ED093B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9128B7-4B4A-4781-93F3-C75EF0ED093B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9128B7-4B4A-4781-93F3-C75EF0ED093B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9128B7-4B4A-4781-93F3-C75EF0ED093B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
